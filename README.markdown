@@ -61,23 +61,23 @@ continue the above, you'd add something like:
 
     [myapp_db_performance]
     env.url http://example.com/munin/db_performance/
-    graph_category myapp
+    env.graph_category myapp
 
     [myapp_total_users]
     env.url http://example.com/munin/total_users/
-    graph_category myapp
+    env.graph_category myapp
 
     [myapp_active_users]
     env.url http://example.com/munin/active_users/
-    graph_category myapp
+    env.graph_category myapp
 
     [myapp_total_sessions]
     env.url http://example.com/munin/total_sessions/
-    graph_category myapp
+    env.graph_category myapp
 
     [myapp_active_sessions]
     env.url http://example.com/munin/active_sessions/
-    graph_category myapp
+    env.graph_category myapp
 
 Restart your Munin node, and it should start collecting and graphing
 that data. 
