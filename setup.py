@@ -27,7 +27,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="django-munin",
-    version="0.1.2",
+    version="0.1.3",
     author="Anders Pearson",
     author_email="anders@columbia.edu",
     url="http://github.com/ccnmtl/django-munin/",
@@ -38,7 +38,7 @@ setup(
     license = "BSD",
     platforms = ["any"],
     zip_safe=False,
-    package_data = {'' : ['*.*']},
+    include_package_data=True,
     packages=['munin'],
     test_suite='nose.collector',
     )
