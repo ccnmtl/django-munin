@@ -78,6 +78,15 @@ continue the above, you'd add something like:
     [myapp_active_sessions]
     env.url http://example.com/munin/active_sessions/
     env.graph_category myapp
+	
+If your HTTP server require Basic Authentication, you can add login and password
+as parameters:
+
+    [myapp_active_sessions]
+    env.url http://example.com/munin/active_sessions/
+    env.graph_category myapp
+	env.login mylogin
+	env.password mypassword
 
 Restart your Munin node, and it should start collecting and graphing
 that data. 
