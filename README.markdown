@@ -39,7 +39,7 @@ available.
 (I'm going to assume that you are already a pro at configuring
 Munin. If not, go get on that. Munin is very cool)  
 
-Next, copy `scripts/django.py` into your `/usr/share/munin/plugins/`
+Next, copy `plugins/django.py` into your `/usr/share/munin/plugins/`
 directory. 
 
 For each metric that you want Munin to monitor, make a symlink in
