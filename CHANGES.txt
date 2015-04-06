@@ -1,0 +1,4 @@
+0.2.0 (2015-04-06)
+==================
+
+* python3 compatibility (from @firm1)
