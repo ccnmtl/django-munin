@@ -1,12 +1,12 @@
-try:
-    from django.conf.urls import patterns
-except ImportError:
-    from django.conf.urls.defaults import patterns
+from django.conf.urls import url
 
-urlpatterns = patterns('',
-                       (r'^total_users/$', 'munin.views.total_users'),
-                       (r'^active_users/$', 'munin.views.active_users'),
-                       (r'^total_sessions/$', 'munin.views.total_sessions'),
-                       (r'^active_sessions/$', 'munin.views.active_sessions'),
-                       (r'^db_performance/$', 'munin.views.db_performance'),
-)
+from munin.views import total_users, active_users, total_sessions, \
+    active_sessions, db_performance
+
+urlpatterns = [
+    url(r'^total_users/$', total_users),
+    url(r'^active_users/$', active_users),
+    url(r'^total_sessions/$', total_sessions),
+    url(r'^active_sessions/$', active_sessions),
+    url(r'^db_performance/$', db_performance),
+]
