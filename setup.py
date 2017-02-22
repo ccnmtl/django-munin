@@ -27,7 +27,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="django-munin",
-    version="0.2.1",
+    version="0.2.2",
     author="Anders Pearson",
     author_email="anders@columbia.edu",
     url="http://github.com/ccnmtl/django-munin/",
