@@ -1,10 +1,14 @@
 from .helpers import muninview
-from django.contrib.auth.models import User
 from django.contrib.sessions.models import Session
 from datetime import datetime
 from datetime import timedelta
 import time
 from .models import Test
+from django.contrib.auth import get_user_model
+
+
+User = get_user_model()
+
 
 @muninview(config="""graph_title Total Users
 graph_vlabel users""")
